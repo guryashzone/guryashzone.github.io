@@ -1,0 +1,566 @@
+<html>
+	<head>
+	
+		<title>Inditutor.com | Home </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/10.png" type="image/x-icon">
+		<link href="csshake.min.css" rel="stylesheet" type="text/css">
+		<link href="w3.css" rel ="stylesheet">
+        <link href="owl/assets/owl.theme.default.min.css" rel="stylesheet">
+		<link href="owl/assets/owl.carousel.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="animate.css">
+		<link href="Hover-master/css/hover-min.css" rel="stylesheet">
+		<link href="fa/css/fa.css" rel="stylesheet">
+		
+		
+		<script src = "jq.js"></script>
+		<script src="owl/owl.carousel.min.js"></script>
+		
+		
+		<script>
+            
+            
+            
+			 $(function(){
+                 $(".owl-carousel").owlCarousel({
+                     
+                     items:1,
+                     autoplay:true,
+                     autoplayTimeout:3000,
+                     rewind:true,
+                     autoplayHoverPause:true,
+                     dots:true,
+                     center:true,
+                     animateIn:'slideInLeft',
+                     animateOut:'zoomOutDown',
+                     
+                 }              
+                 );
+             });
+			 
+            
+            
+            
+		<!-- for landing image -->
+			$(document).ready(function(){
+				$("#img_0").addClass("animated fadeInDownBig");
+					
+			});
+		<!-- For student counter	 -->
+			x = 8001;
+			$(document).ready(function(){
+			
+			<!-- window.setInterval(function(){ -->
+			<!-- $("#counter").text( x+= 6); -->
+			<!-- },1000); -->
+			window.setTimeout(function(){
+			window.setInterval(function(){
+			$("#counter").text( x+= 6);
+			},2000);},2000);
+			
+			window.setInterval(function(){
+			 $("#hourglass").toggleClass("w3-spin")},2000);
+			 
+			});
+
+                
+			<!-- Password functionality -->
+			$(document).on("click","#showPassword",function(){
+				var x= document.getElementById("pass");
+				if( x.type === "password"){
+					x.type = "text";
+				}
+				else{
+					x.type = "password";
+				}
+			});
+			
+			
+			<!-- Sign in div Scroll down -->
+			$(document).ready(function(){
+			$("#element").hide();
+			 var x = $("#trigger").position();
+			 $(window).scroll(function(){
+				if($(document).scrollTop() > x.top)
+				{
+					$("#signUpElement").addClass("animated zoomIn");
+				}
+			 });
+			 });
+			 
+			 <!-- Teacher description hangOut -->
+			 $(document).ready(function(){
+			 
+				
+					var x = $("#trigger4").position();
+					$(window).scroll(function(){
+					
+						if($(document).scrollTop() > x.top)
+							{
+								
+									$(".box1").addClass("animated swing");
+								
+								
+							}
+					});
+			
+			 });
+			
+				<!-- teachers box animaion -->
+				 $(document).ready(function(){
+			 
+				
+					var x = $("#trigger2").position();
+					$(window).scroll(function(){
+					
+						if($(document).scrollTop() > x.top)
+							{
+								
+									$(".box2").addClass("animated fadeInDown");
+								
+								
+							}
+					});
+			
+			 });
+			
+
+
+
+			
+			 
+		<!-- Icons tray	 -->
+			$(document).ready(function(){
+			 var x = $("#trigger3").position();
+			 $(window).scroll(function(){
+				if($(document).scrollTop() > x.top)
+				{
+					$(".social").removeClass("w3-hide animated bounceOutDown").addClass("animated flash");
+				}
+				else if($(document).scrollTop() < x.top)
+				{$(".social").removeClass("animated flash").addClass(" animated bounceOutDown").delay(1000);}
+			 });
+			 });
+			
+			 
+			 
+		<!-- modal In out	  -->
+			 
+	$(document).on("click","#btn" ,function(){
+	$("#modal").fadeIn();
+	
+	});
+	$(document).on("click",".btn_2" ,function(){
+	$("#modal").fadeOut();
+	
+	});
+	
+	<!-- slider -->
+				$(function(){
+                 $(".owl-carousel").owlCarousel({
+                     
+                     items:1,
+                     autoplay:true,
+                     autoplayTimeout:5000,
+                     rewind:true,
+                     autoplayHoverPause:true,
+                     dots:true,
+                     center:true,
+                     animateIn:'slideInRight',
+                     animateOut:'zoomOutDown',
+                     
+                 });
+             });
+			 
+			
+	
+	</script>
+	
+		<!-- Still useless -->
+
+		<style>
+			.indi{
+			font-variant:small-caps;
+			}
+			.w3-dropdown-content {
+				z-index:100
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+	
+	
+	
+		<div class="w3-container w3-bar w3-mobile w3-black w3-card-4 ">
+			<button class="w3-bar-item  w3-xxlarge  hvr-curl-top-right w3-hover-black w3-button w3-padding-0" >INDITUTOR™</button>
+			
+			<div class="w3-dropdown-hover  w3-right w3-hover-red">
+				<button class="w3-padding-24 w3-hover-red  w3-btn infinite animated pulse">+91 8210709174</button>	
+					<div class="w3-dropdown-content w3-white   w3-bottombar w3-border-red w3-bar-block w3-card-4">
+						<a href="#" class="w3-button  w3-back w3-bar-item w3-hover-red">+91 9875898760</a>
+						<a href="#" class="w3-button w3-blck w3-bar-item w3-hover-green">+91 9504211570</a>
+						<a href="#" class="w3-bar-item w3-button w3-hover-yellow w3- ">+91 9673788760</a>
+						<a href="#" class="w3-bar-item w3-button w3-hover-teal w3- ">+91 8765430902</a>
+						<a href="#" class="w3-bar-item w3-button w3-hover-amber w3- ">+91 9937171742</a>
+						<a href="#" class="w3-bar-item w3-button w3-hover-green w3- ">+91 9987359856</a>
+					</div>
+			</div>
+					<a href="about.html"class="w3-padding-24 w3-hover-blue W3-right w3-btn">ABOUT US</a>	
+			<div class="w3-dropdown-hover  w3-right w3-hover-amber">
+				<button class="w3-padding-24 w3-hover-amber w3-btn">SUBJECT</button>	
+					<div class="w3-dropdown-content w3-white   w3-bar-block w3-bottombar w3-border-amber w3-card-4">
+						<a href="Maths.html" class="w3-button  w3-back w3-bar-item w3-hover-red W3-CENTER">MATHS</a>
+						<a href="Physics.html" class="w3-button w3-blck w3-bar-item w3-hover-green W3-CENTER">PHYSICS</a>
+						<a href="Chemistry.html" class="w3-bar-item w3-button w3-hover-yellow  W3-CENTER ">CHEMISTRY</a>
+						<a href="computer.html" class="w3-bar-item w3-button w3-hover-teal W3-CENTER w3- ">COMPUTER</a>
+						<a href="commerce.html" class="w3-bar-item w3-button w3-hover-amber W3-CENTER w3- ">COMMERCE</a>
+						<a href="accounts.html" class="w3-bar-item w3-button w3-hover-purple W3-CENTER w3- ">ACCOUNTS</a>
+						<a href="biology.html" class="w3-button  w3-back w3-bar-item W3-CENTER w3-hover-red">BIOLOGY</a>
+						<a href="english.html" class="w3-button w3-blck w3-bar-item W3-CENTER w3-hover-green">ENGLISH</a>						
+						<a href="hindi.html" class="w3-bar-item w3-button w3-hover-teal W3-CENTER ">HINDI</a>
+						<a href="arts.html" class="w3-bar-item w3-button w3-hover-amber W3-CENTER w3- ">ARTS</a>
+						<a href="cycology.html" class="w3-bar-item w3-button w3-hover-purple W3-CENTER w3- ">CYOCOLOGY</a>
+					
+					</div>
+			</div>
+
+				
+			<div class="w3-dropdown-hover w3-hover-green w3-right ">
+				<button class="w3-padding-24 w3-hover-green w3-btn">HIRE</button>	
+					<div class="w3-dropdown-content w3-white   w3-bar-block w3-bottombar w3-border-green w3-card-4">
+						<a href="Home.html" class="w3-button  w3-back w3-bar-item w3-hover-red">HOME TUTOR</a>
+						<a href="Private.html" class="w3-button w3-blck w3-bar-item w3-hover-green">PRIVATE TUTOR</a>
+						<a href="distant.html" class="w3-bar-item w3-button w3-hover-yellow w3- ">DISTANT TUTOR</a>
+						<a href="nearby.html" class="w3-bar-item w3-button w3-hover-teal w3- ">NEARBY TUTOR</a>
+						<a href="experience.html" class="w3-bar-item w3-button w3-hover-amber w3- ">EXPER. TUTOR</a>
+						<a href="center.html" class="w3-bar-item w3-button w3-hover-red w3- ">STUDY CENTER</a>
+						
+					</div>
+			</div>
+
+
+			<a href="index.html"class="w3-padding-24 w3-hover-blue W3-right w3-button hvr-curl-bottom-rights"><i class=""></i>HOME</a>	
+
+			
+			
+		</div>
+		
+		<div class="owl-carousel owl-theme" style="">
+		
+			<div class="item w3-display-container"  id="img_0">
+                <img src="images/professor.jpg" class="w3-block  w3-card-4">
+				<div class="w3-display-right w3-center" style="margin-right:200px">
+					<div class=" w3-card-4 w3-xxxlarge w3-margin w3-padding w3-opacity-min w3-teal">WORLD CLASS </div>
+					<div class=" w3-card-4 w3-xxxlarge w3-margin w3-padding w3-opacity-min w3-red">MOST EXPERIENCED</div>
+					<div class=" w3-card-4 w3-xxxlarge w3-margin w3-padding w3-opacity-min  w3-amber w3-text-white">TEACHERS</div>
+				</div>
+            </div>
+		
+			
+            <div class="item w3-display-container">
+                <img src="images/student1.jpg"  class="w3-block  w3-card-4">
+                <div class="w3-display-left w3-padding-large" style="margin-left:10px;text-align: center;font-size: 60px;font-family:">
+                    <div class="w3-text-white">
+                        Why so<br> Stressed!!<i id="trigger3"></i> <br> Get the best tutor <br> nearby you.<br>
+                        <a href="signup.html" class="w3-button w3-padding w3-round w3-margin-top w3-indigo w3-card-4 w3-hover-green" style="font-size:29px">SignUp <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="item w3-display-container">
+                <img src="images/professor2.jpg"  class="w3-block  w3-card-4">
+                <div class="w3-display-left w3-padding-large" style="margin-left:20px;text-align: center;font-size: 72px;font-family:forte">
+                    <div class="w3-text-white">
+                       Get in touch <br><i id="trigger3"></i>with <br>most trusted tutors <br> in your area.<br>
+                        <a href="signup.html" class="w3-padding-large w3-margin-top w3-hover-brown" style="font-size:35px;font-family:poor richard">SignUp <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="item w3-display-container">
+                <img src="images/professor.jpg"  class="w3-block  w3-card-4">
+                <div class="w3-display-middle w3-text-dark-purple" style="margin-left: 250px;text-align: center;font-size: 55px;">
+                    Join as a Teacher<br> & <br> get your business<br> ready profile.<br>
+                    <a href="signup.html" class="w3-button w3-padding w3-round w3-margin-top w3-indigo w3-card-4 w3-hover-green" style="font-size:29px">SignUp <span class="fa fa-angle-double-right"></span></a>
+                </div>
+            </div>
+					
+		</div>
+		
+		<br><br>
+		<hr width="" height="8px">
+		<br><br>
+		
+		
+		
+		<div class="w3-display-container w3-card-4 w3-amber">
+			<div class="w3-display-middle w3-text-deep-purple  w3-jumbo">How we work for you?</div>
+			</div></br></br></br>
+			
+			
+			<div  class="w3-margin-top">
+			<div class="" style="margin-left:180px,margin-right:180px,">
+				<div class="w3-xlarge w3-padding w3-center"><img src="images/select.gif" class="w3-margin-left w3-margin-right" width="180px">We search for the best tutor in your area on the basis of your requirements.</div>
+			</div></br>
+			
+			<div class="" style="margin-left:180px,margin-right:180px,">
+				<div class="  w3-xlarge w3-padding w3-center">Then we arrange for a free counselling for the students for better results. &nbsp &nbsp<img src="images/counselling.png" class="w3-margin-left w3-margin-right" width="180px"></div>
+			</div></br>
+		<span id="trigger2"></span>	
+			<div class="" style="margin-left:180px,margin-right:180px,">
+				<div class="  w3-xlarge w3-padding w3-center"><img src="images/10.png" class="w3-margin-left w3-margin-right" width="180px">&nbsp &nbsp &nbsp We then have a call with the tutuor who is best according to you.</div>
+			</div></br>
+			
+			<div class="" style="margin-left:180px,margin-right:180px,">
+				<div class=" w3-xlarge w3-padding w3-center">Then you need to select the best tutor which suits your criteria basis &nbsp &nbsp <img src="images/people.png" class="w3-margin-left w3-margin-right" width="180px"></div>
+			</div></br>
+			</div>	
+		
+		
+		
+		
+		</br></br></br>
+	<hr>
+			
+		
+
+
+
+
+
+	
+		
+		</br></br></br>
+		
+		
+		
+			
+		
+		
+		<div class=" w3-margin w3-container">
+		<center>
+			<div class="w3-row w3-padding box2 " style="margin-left:150px">
+				<div id="box1" class="w3-col w3-hover-white w3-round-large w3-mobile w3-margin w3-padding m3 w3-teal w3-card">
+					<center><span id="trigger4"></span>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Dr.P.Mukherjee</p>
+						<H3>CHEMISTRY</H3>
+						<p class=" w3-padding w3-justify">One of the leading chemistry teachers across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teachinfg scope and campus. 15 years of teaching experience cum 20 years of learning.</p></br>
+					</center>
+				</div>
+				
+				<div id="box2" class="w3-col w3-hover-white w3-round-large  w3-margin w3-padding m3 w3-purple w3-card">
+					<center>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Mr.S.K Goyal</p>
+						<H3>PHYSICS</H3>
+						<p class=" w3-padding w3-justify">One of the leading physics teachers across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teaching scope and campus. 25 years of teaching experience cum 20 years of leraning.</p></br>
+					</center>
+				</div>
+			
+			
+			<div id="box3" class="w3-col  w3-hover-white w3-round-large  w3-margin w3-padding m3 w3-indigo w3-card">
+					<center>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Dr.R.D Sharma</p>
+						<H3>MATHEMATICS</H3>
+						<p class=" w3-padding w3-justify">One of the leading mathematician across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teaching scope and campus. 15 years of teaching experience cum 32 years of learning.</p></br>
+					</center>
+				</div>
+			
+			
+			</center>
+			</div>
+			
+			
+		</div>
+			
+		<div class=" w3-margin w3-container">
+		<center>
+			<div class="w3-row w3-padding box1 " style="margin-left:150px">
+				<div id="box4" class="w3-col w3-round-large w3-hover-white w3-margin w3-padding m3 w3-orange w3-card">
+					<center>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Mr.Anand K.V</p>
+						<H3>COMPUTER</H3>
+						<p class=" w3-padding w3-justify">One of the leading IT teachers across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teaching scope and campus. 15 years of teaching experience cum 12 years of learning.</p>
+					</center>
+				</div>
+				
+				<div id="box5" class="w3-col w3-round-large  w3-hover-white w3-margin w3-padding m3 w3-red w3-card">
+					<center>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Dr.Sukhmeet Singh</p>
+						<H3>ACCOUNTS</H3>
+						<p class=" w3-padding w3-justify">One of the leading accountantcy teachers across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teaching scope and campus. 15 years of teaching experience cum 22 years of leraning.</p>
+					</center>
+				</div>
+			
+			
+			<div id="box6" class="w3-col w3-hover-white w3-round-large  w3-margin  w3-padding m3 w3-green w3-card">
+					<center>
+						<img src="images/10.png" width="100px" class="w3-margin">
+						<p>Mrs.Poonam Pandey</p>
+						<H3>BIOLOGY</H3>
+						<p class=" w3-padding w3-justify">One of the leading biology teachers across Jharkhand. Teacher in leading schools and top colleges of Jamshedpur. Leader and guiding personality.
+						Always ready to clear doubt. Having world class teaching scope and campus. 15 years of teaching experience cum 2 years of learning.</p>
+					</center>
+				</div>
+			<span id="trigger"></span>
+			
+			</center>
+			</div>
+			
+			
+		</div>
+		
+		
+		
+		</br>
+		<hr>
+		
+	
+	<div  class="w3-container w3-light-blue w3-center">
+	<div id="signUpElement">
+		<div class="w3-text-white w3-xxlarge w3-center w3-padding " style="margin-top:50px">Thousand of tutors are getting new <br> students with <font class="w3-text-red">INDITUTOR</font>.com</div>	
+
+		<div class="w3-text-white w3-large w3-center">Sign-up today for a better tomorrow.</div>	
+		<form action="signup.html"><button class="w3-btn infinite animated pulse w3-light-blue w3-border w3-padding w3-large w3-text-white w3-border-white w3-center w3-round" style="margin-top:50px;margin-bottom:50px">Sign Up</button></form>
+	</div>
+	</div>	
+	
+	
+	
+	<div id="counterDiv" class=" w3-light-blue  w3-center">
+		
+	<div  class="w3-text-white  w3-large w3-margin-left w3-padding w3-small w3-wide" style="margin-top:50px"><span id="hourglass" class="fa fa-hourglass-start w3-text-white w3-large w3-spin"></span> STUDENT COUNT: </br>
+	<div class=" infinite animated pulse"><font  class="w3-jumbo" id="counter">8001</font></div></div>	
+
+		
+	</div>
+		<br><br><br>
+	
+
+
+
+
+	
+		<div class="w3-container">
+				<div class="w3-center w3-opacity w3-xxlarge">Getting help is easier than you think.</div>
+			
+		</div><br>
+		
+		
+		<div class="w3-content">
+			<div class="w3-row">
+				<div class="w3-col w3-twothird">
+					<h1 class="w3-text-blue w3-opacity  w3-xlarge">1. Tell us what you need help with</h1>
+					<p class="w3-opacity">Answer few questions about what you need help with and the type of tutor<br>you're looking for.</p>
+					
+					</br></br>
+					<h1 class="w3-text-blue w3-opacity  w3-xlarge">2. Get introduced</h1>
+					<p class="w3-opacity">Within hours, you'll receive up to 5 introductions to expert tutors based on your<br>specific needs.</p>
+					
+					</br></br>
+					<h1 class="w3-text-blue w3-opacity  w3-xlarge">3. Hire the right tutor</h1>
+					<p class="w3-opacity">When you're ready, compare tutors and their reviews then hire the one that's right</br>for you.</p>
+					</br></br>
+				</div>
+				
+				
+				
+				<div class="w3-col w3-third hvr-buzz-out">
+					<img src="images/phone2.jpg" class="w3-image" style="max-height:500px">
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+			
+		<br><br><br>
+	
+	
+	<div class="w3-bar w3-light-grey w3-center">
+	<a href="index.html" class="w3-bar-items w3-button w3-text-grey">HOME</a>
+	<a href="feedback.html" class="w3-bar-items w3-button w3-text-grey">HIRE</a>
+	<a href="feedback.html" class="w3-bar-items w3-button w3-text-grey">SUBJECT</a>
+	<a href="about.html" class="w3-bar-items w3-button w3-text-grey">ABOUT-US</a>
+	<a href="contact.html" class="w3-bar-items w3-button w3-text-grey">CONTACT</a>
+	<a href="feedback.html" class="w3-bar-items w3-button w3-text-grey">FEEDBACK</a>
+	</div>
+	
+	
+		<br>
+		
+	<div class="w3-light-grey w3-text-black w3-small w3-display-container"  style="height:100px;padding-left:50px;padding-right:50px;">
+		<div class="w3-display-middle">
+		Copyright&copy <font class="w3-text-red hvr-float-shadow">INDITUTOR™</font>.html 2018-19		
+		</div>
+	</div></br></br></br></br></br></br>
+		
+		<div class="w3-bar-block w3-transparent">
+			
+		</div>
+	
+		<div class="w3-bar w3-bottom w3-transparent w3-hide social" style="margin-left:50px;margin-bottom:50px">
+		
+		 <div class="hvr-icon-drop"><a href="https://www.facebook.com/" title="Like us on Facebook" class=" w3-button w3-xlarge hvr-icon w3-text-grey w3-hover-indigo w3-transparent w3-hover-text-white  fa fa-thumbs-o-up"></a></div>
+		
+		 <div class="hvr-icon-wobble-vertical"><a href="https://github.com/" title="Follow on Github" class=" w3-button w3-xlarge hvr-icon w3-text-grey w3-hover-red w3-transparent w3-hover-text-white  fa fa-github"></a></div>
+		
+		 <div class="hvr-icon-wobble-horizontal"><a href="https://twitter.com/" title="Tweet on Twitter"  class=" w3-button w3-xlarge hvr-icon w3-text-grey w3-hover-blue w3-transparent w3-hover-text-white  fa fa-twitter"></a></div>
+		
+		 <div class="hvr-icon-spin"><a href="https://www.android.com/" title="Download app on Android" class=" w3-button w3-xlarge hvr-icon w3-text-grey w3-hover-green w3-transparent w3-hover-text-white  fa fa-android"></a></div>
+		
+		 <div class="hvr-icon-buzz-out"><button href="" title="Login" onclick="document.getElementById('modal').style.display='block'" id="bt" class=" w3-button w3-xlarge hvr-icon w3-text-grey w3-hover-deep-purple w3-transparent w3-hover-text-white  fa fa-user"></button></div>
+		 
+		</div>
+	
+		
+			<center><div  id="modal" class="w3-modal">
+		<div class="w3-modal-content w3-round w3-card-4" style="max-width:350px">
+		<div id="" class=" btn_2 w3-large w3-right w3-button w3-hover-shadow w3-hover-green"><i class="fa fa-times-circle"></i> </div></br></br>
+		<div class="hvr-icon-spin">	<img src="images/loginavatar.png" style="width:130px" class="hvr-icon w3-margin-top w3-image"></div>
+			</br></br>
+			<div></div>
+			<div class="w3-section"><form class="w3-container ">
+				<input class="w3-input" type="text" placeholder="Username" required/>
+				<input class="w3-input" type="password" id="pass" placeholder="Password" required/></br>
+		<div class="hvr-icon-up">		<button class="hvr-icon w3-button w3-hover-green w3-green w3-ripple w3-round w3-large w3-block">Login</button></div>
+				<div class="w3-left-align"><input type="checkbox" id="showPassword" class="w3-check w3-margin-top w3-small" > Show Password</div>
+				<div class="w3-left"><input type="checkbox" class="w3-check w3-small" checked="checked"> Remember Me</div><br>
+				
+			</form>
+
+			<div class="w3-container w3-border-top w3-light-grey w3-padding-16">
+				<button class="w3-red w3-button w3-left btn_2">Cancel</button>
+				<div class="w3-right">
+				<a href="signup.html" class="w3-text-green w3-button w3-transparent">SignUp</a><i class=" fa fa-facebook-official"> &nbsp </i><i class="fa fa-twitter"> &nbsp </i><i class="fa fa-github"> &nbsp </i></br>
+				</div>
+			</div>	
+					
+			</div>
+		</div>
+			
+			
+			
+		</div>
+	</center>	
+	</br></br>
+	
+		
+		
+	</body>
+</html>
